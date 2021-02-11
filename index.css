@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.change {
+    color: orchid;
+    text-align: center;
+    padding-top: 5%;
+    font-family: Pangolin;
+    font-size: 100px;
+    border: 10px solid black;
+}
+
+
+
+body{
+    background-color: midnightblue;
+}
+
+
+/* .coin{
+
+}
+
+.gamebox{
+
+} */ 
