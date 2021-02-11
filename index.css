@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 .change {
-    color: orchid;
+    color: #f2aaaa;
     text-align: center;
     padding-top: 5%;
     font-family: Pangolin;
-    font-size: 100px;
-    border: 10px solid black;
+    font-size: 90px;
+    border: 5px solid #e36387;
 }
 
 
 
 body{
-    background-color: midnightblue;
+    margin: 30px;
+    background-color: #ddf3f5 ;
 }
 
+.left {
+    float: left;
+    padding-left: 10%;
+}
 
+.right {
+    float: right;
+    padding-right: 10%;
+}
 /* .coin{
 
 }

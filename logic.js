@@ -1,13 +1,57 @@
 // document.getElementsByClassName("change").style.color = 'purple';
 //selecting the element 
 const myHeading = document.getElementById('myHeading');
-const myButton = document.getElementById('myButton');
+const myButton = document.getElementById('click');
 const myTextInput= document.getElementById('myTextInput');
 
-//adding event and what to do 
-myButton.addEventListener('click', () => {
-    myHeading.style.color = myTextInput.value;
-});
+//adding event and w
+
+//fcoin w/ DOM manipulationijlvar heads -0--hvar it'sti'smyTextInput.valueeuat to
+
+document.getElementById('click').onclick = click;
+//flipcoin w/ DOM manipulation
+var heads = 0;
+var tails = 0;
+function click() {  
+    x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        flip("heads");
+    }else{
+        flip("tails");
+    }
+};
+function flip(coin) {
+    document.getElementById("result").innerHTML = coin;
+};
+
+
+
+//call the coinFlip() as many times as user wants 
+//since instructions say will allow user as many coins as wants 
+
+let score = 0;
+
+
+
+
+
+//let score=0
+//inputs heads or tails 
+//input= result of flip coin function 
+
+function keepScore() {
+    if (input == result) {
+        score++;
+    }
+    
+}
+
+// function playTimes(){
+//    for (i=1; i<=num; i++){
+//        console.log(coinFlip());
+//     }
+// }
+// playTimes(2);
 
 
 
@@ -16,42 +60,21 @@ myButton.addEventListener('click', () => {
 //     // document.getElementById("change").style.color = 'purple';
 //     var color = document.getElementById("change").style.color = 'purple';
 //     // id.innerHTML = "ooops!";
-//   }
-
-  
-//     // Note that the listeners in this case are |this|, not this.handleEvent
-//     element.addEventListener('click', this, false);
-//     element.addEventListener('dblclick', this, false);
-  
-//     // You can properly remove the listeners this way:
-//     element.removeEventListener('click', this, false);
-//     element.removeEventListener('dblclick', this, false);
-//   }
-//   const s = new ColorChangeButton(document.body);
+//   }de 
 
 
-
-
-function coinFlip(){
-   let coin_side= ['heads', 'tails'];
-   var answer= coin_side[Math.floor(Math.random() * coin_side.length)];
-   //play ! there's an actual prompt
-       return (`it's ${answer}`);
-}
+//original code 
+// function coinFlip(){
+//    let coin_side= ['heads', 'tails'];
+//    var answer= coin_side[Math.floor(Math.random() * coin_side.length)];
+//    //play ! there's an actual prompt
+//        return (`it's ${answer}`);
+// }
 //testing coinFlip()
 //coinFlip();
 //coinFlip();
 //coinFlip();
 
-//call the coinFlip() as many times as user wants 
-//since instructions say will allow user to flip as many coins as wants 
-
-function playTimes(num){
-   for (i=1; i<=num; i++){
-       console.log(coinFlip());
-    }
-}
-playTimes(2);
 
 
 
