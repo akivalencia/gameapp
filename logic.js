@@ -16,8 +16,10 @@ function click() {
     x = (Math.floor(Math.random() * 2) == 0);
     if(x){
         flip("heads");
+        document.getElementById("coin").src="images/heads.png";
     }else{
         flip("tails");
+        document.getElementById("coin").src= "images/tails.png"
     }
 };
 function flip(coin) {
